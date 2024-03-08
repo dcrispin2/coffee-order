@@ -34,5 +34,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username dcrispin2 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/dcrispin2/c322-spring2024-homework2:latest --file Dockerfile .  
-          docker push ghcr.io/dcrispin2/c322-spring2024-homework2:latest
+          docker build -t ghcr.io/dcrispin2/coffee-order:latest --file Dockerfile .  
+          docker push ghcr.io/dcrispin2/coffee-order:latest
