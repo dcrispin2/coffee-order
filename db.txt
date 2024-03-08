@@ -38,3 +38,20 @@
 15, 2.39, Dark roast, Milk
 16, 2.87, House Blend, Milk, Soy, Whip, Mocha
 17, 2.4999998, Decaf, Milk, Soy, Whip, Mocha
+1, 2.39, Dark roast, Milk
+2, 1.99, Dark roast
+3, 1.34, Espresso
+4, 1.65, House Blend
+5, 1.28, Decaf
+6, 2.39, Dark roast, Milk
+7, 1.74, Espresso, Milk
+8, 2.05, House Blend, Milk
+9, 1.68, Decaf, Milk
+10, 3.21, Dark roast, Milk, Soy, Whip, Mocha
+11, 2.56, Espresso, Milk, Soy, Whip, Mocha
+12, 2.87, House Blend, Milk, Soy, Whip, Mocha
+13, 2.4999998, Decaf, Milk, Soy, Whip, Mocha
+14, 1.99, Dark roast
+15, 2.39, Dark roast, Milk
+16, 2.87, House Blend, Milk, Soy, Whip, Mocha
+17, 2.4999998, Decaf, Milk, Soy, Whip, Mocha
