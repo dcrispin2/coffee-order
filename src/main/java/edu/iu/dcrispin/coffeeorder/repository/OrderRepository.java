@@ -1,7 +1,6 @@
 package edu.iu.dcrispin.coffeeorder.repository;
 
 import edu.iu.dcrispin.coffeeorder.model.*;
-import edu.iu.dcrispin.coffeeorder.model.*;
 import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
