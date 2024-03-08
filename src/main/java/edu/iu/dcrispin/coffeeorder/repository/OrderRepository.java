@@ -30,6 +30,15 @@ public class OrderRepository {
             case "dark roast":
                 beverage = new DarkRoast();
                 break;
+            case "espresso":
+                beverage = new Espresso();
+                break;
+            case "house blend":
+                beverage = new HouseBlend();
+                break;
+            case "decaf":
+                beverage = new Decaf();
+                break;
         }
         if (beverage == null) {
             throw new Exception("Beverage type '%s' is not valid!".formatted(order.beverage()));
@@ -42,13 +51,19 @@ public class OrderRepository {
                 case "mocha":
                     beverage = new Mocha(beverage);
                     break;
+                case "soy":
+                    beverage = new Soy(beverage);
+                    break;
+                case "whip":
+                    beverage = new Whip(beverage);
+                    break;
                 default:
                     throw new Exception("Condiment type '%s' is not valid".formatted(condiment));
             }
         }
 
         Path path = Paths.get(DATABASE_NAME);
-        String data = "" + id + beverage.cost() + beverage.getDescription();
+        String data = id + ", " + beverage.cost() + ", " + beverage.getDescription();
         appendToFile(path, data + NEW_LINE);
 
         Receipt receipt = new Receipt(beverage.getDescription(), beverage.cost(), id);

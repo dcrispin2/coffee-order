@@ -5,13 +5,11 @@ import edu.iu.dcrispin.coffeeorder.model.Receipt;
 import edu.iu.dcrispin.coffeeorder.repository.OrderRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/orders")
+@CrossOrigin
 public class OrderController {
     private OrderRepository orderRepository;
 
@@ -23,6 +21,7 @@ public class OrderController {
     public ResponseEntity<?> add(@RequestBody OrderData order) {
         try {
             Receipt receipt = orderRepository.add(order);
+            System.out.println(receipt);
             return ResponseEntity
                     .status(HttpStatus.CREATED)
                     .body(receipt);
